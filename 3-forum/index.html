@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DevTalk | Форум разработчиков</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-top">
+					<a href="#" class="logo">
+						<span class="logo-bracket">[</span>DevTalk<span class="logo-bracket"
+							>]</span
+						>
+					</a>
+					<div class="header-actions">
+						<button class="btn btn-outline">Войти</button>
+						<button class="btn btn-primary">Регистрация</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				<aside class="sidebar">
+					<div class="sidebar-section">
+						<h3>Категории</h3>
+						<ul class="category-list">
+							<li class="active"><span class="cat-icon">💬</span> Все темы</li>
+							<li><span class="cat-icon">🌐</span> Web-разработка</li>
+							<li><span class="cat-icon">📱</span> Мобильная разработка</li>
+							<li><span class="cat-icon">🗄️</span> Базы данных</li>
+							<li><span class="cat-icon">🔧</span> DevOps</li>
+							<li><span class="cat-icon">❓</span> Вопросы новичков</li>
+						</ul>
+					</div>
+					<div class="sidebar-section">
+						<h3>Статистика</h3>
+						<div class="stats">
+							<div class="stat-item">
+								<span class="stat-value">12,458</span>
+								<span class="stat-label">Тем</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-value">89,234</span>
+								<span class="stat-label">Сообщений</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-value">5,672</span>
+								<span class="stat-label">Участников</span>
+							</div>
+						</div>
+					</div>
+				</aside>
+
+				<section class="content">
+					<div class="content-header">
+						<h1>Последние обсуждения</h1>
+						<button class="btn btn-primary">+ Новая тема</button>
+					</div>
+
+					<div class="topics-list">
+						<article class="topic-card pinned">
+							<div class="topic-votes">
+								<button class="vote-btn">▲</button>
+								<span class="vote-count">156</span>
+								<button class="vote-btn">▼</button>
+							</div>
+							<div class="topic-main">
+								<div class="topic-meta">
+									<span class="tag tag-pinned">📌 Закреплено</span>
+									<span class="tag tag-category">Web-разработка</span>
+								</div>
+								<h2 class="topic-title">Правила форума и FAQ для новичков</h2>
+								<p class="topic-excerpt">
+									Добро пожаловать на DevTalk! Перед созданием темы ознакомьтесь
+									с правилами...
+								</p>
+								<div class="topic-footer">
+									<div class="topic-author">
+										<div class="avatar admin">A</div>
+										<span>Admin</span>
+									</div>
+									<div class="topic-stats">
+										<span>💬 45 ответов</span>
+										<span>👁️ 2.3k просмотров</span>
+										<span>🕐 2 часа назад</span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="topic-card">
+							<div class="topic-votes">
+								<button class="vote-btn">▲</button>
+								<span class="vote-count">42</span>
+								<button class="vote-btn">▼</button>
+							</div>
+							<div class="topic-main">
+								<div class="topic-meta">
+									<span class="tag tag-solved">✓ Решено</span>
+									<span class="tag tag-category">Web-разработка</span>
+								</div>
+								<h2 class="topic-title">
+									Как правильно организовать структуру React-проекта?
+								</h2>
+								<p class="topic-excerpt">
+									Начинаю новый проект на React и хочу сразу сделать правильную
+									архитектуру...
+								</p>
+								<div class="topic-footer">
+									<div class="topic-author">
+										<div class="avatar">М</div>
+										<span>MaxDev</span>
+									</div>
+									<div class="topic-stats">
+										<span>💬 23 ответа</span>
+										<span>👁️ 892 просмотра</span>
+										<span>🕐 5 часов назад</span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="topic-card">
+							<div class="topic-votes">
+								<button class="vote-btn">▲</button>
+								<span class="vote-count">28</span>
+								<button class="vote-btn">▼</button>
+							</div>
+							<div class="topic-main">
+								<div class="topic-meta">
+									<span class="tag tag-hot">🔥 Горячее</span>
+									<span class="tag tag-category">DevOps</span>
+								</div>
+								<h2 class="topic-title">
+									Docker vs Kubernetes: что выбрать для небольшого проекта?
+								</h2>
+								<p class="topic-excerpt">
+									Разворачиваю микросервисную архитектуру, нужен совет по
+									выбору...
+								</p>
+								<div class="topic-footer">
+									<div class="topic-author">
+										<div class="avatar">К</div>
+										<span>KirillOps</span>
+									</div>
+									<div class="topic-stats">
+										<span>💬 67 ответов</span>
+										<span>👁️ 1.5k просмотров</span>
+										<span>🕐 1 день назад</span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="topic-card">
+							<div class="topic-votes">
+								<button class="vote-btn">▲</button>
+								<span class="vote-count">15</span>
+								<button class="vote-btn">▼</button>
+							</div>
+							<div class="topic-main">
+								<div class="topic-meta">
+									<span class="tag tag-category">Базы данных</span>
+								</div>
+								<h2 class="topic-title">
+									Оптимизация запросов PostgreSQL для больших таблиц
+								</h2>
+								<p class="topic-excerpt">
+									Есть таблица с 10+ млн записей, запросы выполняются очень
+									медленно...
+								</p>
+								<div class="topic-footer">
+									<div class="topic-author">
+										<div class="avatar">А</div>
+										<span>AnnaDB</span>
+									</div>
+									<div class="topic-stats">
+										<span>💬 12 ответов</span>
+										<span>👁️ 456 просмотров</span>
+										<span>🕐 2 дня назад</span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="topic-card">
+							<div class="topic-votes">
+								<button class="vote-btn">▲</button>
+								<span class="vote-count">8</span>
+								<button class="vote-btn">▼</button>
+							</div>
+							<div class="topic-main">
+								<div class="topic-meta">
+									<span class="tag tag-category">Вопросы новичков</span>
+								</div>
+								<h2 class="topic-title">
+									С чего начать изучение программирования в 2026?
+								</h2>
+								<p class="topic-excerpt">
+									Хочу сменить профессию, подскажите с какого языка лучше
+									начать...
+								</p>
+								<div class="topic-footer">
+									<div class="topic-author">
+										<div class="avatar">Н</div>
+										<span>Newbie2026</span>
+									</div>
+									<div class="topic-stats">
+										<span>💬 34 ответа</span>
+										<span>👁️ 678 просмотров</span>
+										<span>🕐 3 дня назад</span>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="pagination">
+						<button class="page-btn active">1</button>
+						<button class="page-btn">2</button>
+						<button class="page-btn">3</button>
+						<span class="page-dots">...</span>
+						<button class="page-btn">24</button>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<p>&copy; 2026 DevTalk Forum. Сообщество разработчиков.</p>
+			</div>
+		</footer>
+	</body>
+</html>

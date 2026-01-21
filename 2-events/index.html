@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EventHub | Афиша мероприятий</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<nav class="nav">
+					<a href="#" class="logo">
+						<span class="logo-icon">🎉</span>
+						EventHub
+					</a>
+					<ul class="nav-menu">
+						<li><a href="#events">События</a></li>
+						<li><a href="#categories">Категории</a></li>
+						<li><a href="#about">О нас</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="hero">
+			<div class="container">
+				<h1>Найди своё <span class="highlight">событие</span></h1>
+				<p>Концерты, выставки, мастер-классы и многое другое в твоём городе</p>
+				<div class="search-box">
+					<input type="text" placeholder="Поиск мероприятий..." />
+					<button class="search-btn">Найти</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="categories" id="categories">
+			<div class="container">
+				<div class="category-tags">
+					<span class="tag active">Все</span>
+					<span class="tag">Концерты</span>
+					<span class="tag">Выставки</span>
+					<span class="tag">Театр</span>
+					<span class="tag">Спорт</span>
+					<span class="tag">Мастер-классы</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="events" id="events">
+			<div class="container">
+				<h2 class="section-title">Ближайшие события</h2>
+				<div class="events-grid">
+					<article class="event-card">
+						<div
+							class="event-image"
+							style="background: linear-gradient(135deg, #667eea, #764ba2)"
+						>
+							<span class="event-date">
+								<span class="day">25</span>
+								<span class="month">ЯНВ</span>
+							</span>
+							<span class="event-category">Концерт</span>
+						</div>
+						<div class="event-content">
+							<h3>Симфонический оркестр</h3>
+							<p class="event-location">📍 Концертный зал "Филармония"</p>
+							<p class="event-time">🕐 19:00</p>
+							<div class="event-footer">
+								<span class="price">от 1500 ₽</span>
+								<button class="btn-ticket">Билеты</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="event-card">
+						<div
+							class="event-image"
+							style="background: linear-gradient(135deg, #f093fb, #f5576c)"
+						>
+							<span class="event-date">
+								<span class="day">28</span>
+								<span class="month">ЯНВ</span>
+							</span>
+							<span class="event-category">Выставка</span>
+						</div>
+						<div class="event-content">
+							<h3>Современное искусство</h3>
+							<p class="event-location">📍 Галерея "Арт-Модерн"</p>
+							<p class="event-time">🕐 10:00 - 20:00</p>
+							<div class="event-footer">
+								<span class="price">от 500 ₽</span>
+								<button class="btn-ticket">Билеты</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="event-card">
+						<div
+							class="event-image"
+							style="background: linear-gradient(135deg, #4facfe, #00f2fe)"
+						>
+							<span class="event-date">
+								<span class="day">02</span>
+								<span class="month">ФЕВ</span>
+							</span>
+							<span class="event-category">Спорт</span>
+						</div>
+						<div class="event-content">
+							<h3>Хоккейный матч</h3>
+							<p class="event-location">📍 Ледовый дворец</p>
+							<p class="event-time">🕐 18:30</p>
+							<div class="event-footer">
+								<span class="price">от 800 ₽</span>
+								<button class="btn-ticket">Билеты</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="event-card">
+						<div
+							class="event-image"
+							style="background: linear-gradient(135deg, #fa709a, #fee140)"
+						>
+							<span class="event-date">
+								<span class="day">05</span>
+								<span class="month">ФЕВ</span>
+							</span>
+							<span class="event-category">Театр</span>
+						</div>
+						<div class="event-content">
+							<h3>Мастер и Маргарита</h3>
+							<p class="event-location">📍 Драматический театр</p>
+							<p class="event-time">🕐 19:00</p>
+							<div class="event-footer">
+								<span class="price">от 2000 ₽</span>
+								<button class="btn-ticket">Билеты</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="event-card">
+						<div
+							class="event-image"
+							style="background: linear-gradient(135deg, #a8edea, #fed6e3)"
+						>
+							<span class="event-date">
+								<span class="day">10</span>
+								<span class="month">ФЕВ</span>
+							</span>
+							<span class="event-category">Мастер-класс</span>
+						</div>
+						<div class="event-content">
+							<h3>Керамика для начинающих</h3>
+							<p class="event-location">📍 Студия "Глина"</p>
+							<p class="event-time">🕐 12:00</p>
+							<div class="event-footer">
+								<span class="price">от 3000 ₽</span>
+								<button class="btn-ticket">Билеты</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="event-card">
+						<div
+							class="event-image"
+							style="background: linear-gradient(135deg, #5ee7df, #b490ca)"
+						>
+							<span class="event-date">
+								<span class="day">14</span>
+								<span class="month">ФЕВ</span>
+							</span>
+							<span class="event-category">Концерт</span>
+						</div>
+						<div class="event-content">
+							<h3>Джазовый вечер</h3>
+							<p class="event-location">📍 Клуб "Blue Note"</p>
+							<p class="event-time">🕐 21:00</p>
+							<div class="event-footer">
+								<span class="price">от 1200 ₽</span>
+								<button class="btn-ticket">Билеты</button>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer" id="about">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-brand">
+						<span class="logo-icon">🎉</span>
+						<span>EventHub</span>
+					</div>
+					<p>Ваш гид по лучшим событиям города</p>
+					<p class="copyright">&copy; 2026 EventHub. Все права защищены.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

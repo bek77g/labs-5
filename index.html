@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Лабораторные работы | Web-разработка</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--bg: #0f0f1a;
+				--card-bg: #1a1a2e;
+				--text: #ffffff;
+				--text-muted: #8888aa;
+				--accent-1: #6366f1;
+				--accent-2: #f093fb;
+				--accent-3: #7c3aed;
+				--accent-4: #ff6b6b;
+			}
+
+			body {
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				background: var(--bg);
+				color: var(--text);
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.container {
+				max-width: 1100px;
+				margin: 0 auto;
+				padding: 0 20px;
+				width: 100%;
+			}
+
+			header {
+				padding: 60px 0 40px;
+				text-align: center;
+			}
+
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 15px;
+				background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			.subtitle {
+				color: var(--text-muted);
+				font-size: 1.1rem;
+			}
+
+			main {
+				flex: 1;
+				padding: 40px 0 80px;
+			}
+
+			.projects-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 30px;
+			}
+
+			.project-card {
+				background: var(--card-bg);
+				border-radius: 20px;
+				overflow: hidden;
+				transition:
+					transform 0.4s,
+					box-shadow 0.4s;
+				text-decoration: none;
+				color: inherit;
+				display: block;
+				border: 1px solid rgba(255, 255, 255, 0.05);
+			}
+
+			.project-card:hover {
+				transform: translateY(-12px);
+				box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+			}
+
+			.card-preview {
+				height: 180px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 4rem;
+				position: relative;
+				overflow: hidden;
+			}
+
+			.card-preview::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				opacity: 0.15;
+			}
+
+			.card-1 .card-preview {
+				background: linear-gradient(135deg, #6366f1, #a855f7);
+			}
+			.card-2 .card-preview {
+				background: linear-gradient(135deg, #667eea, #764ba2);
+			}
+			.card-3 .card-preview {
+				background: linear-gradient(135deg, #7c3aed, #a78bfa);
+			}
+			.card-4 .card-preview {
+				background: linear-gradient(135deg, #ff6b6b, #feca57);
+			}
+
+			.card-content {
+				padding: 25px;
+			}
+
+			.card-number {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				background: rgba(255, 255, 255, 0.1);
+				border-radius: 8px;
+				text-align: center;
+				line-height: 30px;
+				font-size: 0.85rem;
+				font-weight: bold;
+				margin-bottom: 15px;
+				color: var(--text-muted);
+			}
+
+			.card-content h2 {
+				font-size: 1.3rem;
+				margin-bottom: 10px;
+			}
+
+			.card-content p {
+				color: var(--text-muted);
+				font-size: 0.95rem;
+				line-height: 1.5;
+			}
+
+			.card-arrow {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+				margin-top: 20px;
+				color: var(--accent-1);
+				font-weight: 500;
+				font-size: 0.9rem;
+			}
+
+			.card-1 .card-arrow {
+				color: #6366f1;
+			}
+			.card-2 .card-arrow {
+				color: #667eea;
+			}
+			.card-3 .card-arrow {
+				color: #7c3aed;
+			}
+			.card-4 .card-arrow {
+				color: #ff6b6b;
+			}
+
+			footer {
+				text-align: center;
+				padding: 30px 0;
+				color: var(--text-muted);
+				border-top: 1px solid rgba(255, 255, 255, 0.05);
+			}
+
+			@media (max-width: 600px) {
+				h1 {
+					font-size: 1.8rem;
+				}
+
+				.projects-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>Лабораторные работы</h1>
+				<p class="subtitle">Web-разработка | 5 семестр</p>
+			</div>
+		</header>
+
+		<main>
+			<div class="container">
+				<div class="projects-grid">
+					<a href="1-business-card/index.html" class="project-card card-1">
+						<div class="card-preview">👨‍💻</div>
+						<div class="card-content">
+							<span class="card-number">01</span>
+							<h2>Сайт-визитка</h2>
+							<p>
+								Личная страница разработчика с портфолио, навыками и контактами.
+								Тёмная минималистичная тема.
+							</p>
+							<div class="card-arrow">Открыть проект →</div>
+						</div>
+					</a>
+
+					<a href="2-events/index.html" class="project-card card-2">
+						<div class="card-preview">🎉</div>
+						<div class="card-content">
+							<span class="card-number">02</span>
+							<h2>Сайт мероприятий</h2>
+							<p>
+								Афиша событий с карточками концертов, выставок и мастер-классов.
+								Яркий градиентный дизайн.
+							</p>
+							<div class="card-arrow">Открыть проект →</div>
+						</div>
+					</a>
+
+					<a href="3-forum/index.html" class="project-card card-3">
+						<div class="card-preview">💬</div>
+						<div class="card-content">
+							<span class="card-number">03</span>
+							<h2>Онлайн форум</h2>
+							<p>
+								Страница обсуждений для разработчиков с темами, голосованием и
+								категориями. Классический форумный стиль.
+							</p>
+							<div class="card-arrow">Открыть проект →</div>
+						</div>
+					</a>
+
+					<a href="4-design-blog/index.html" class="project-card card-4">
+						<div class="card-preview">🎨</div>
+						<div class="card-content">
+							<span class="card-number">04</span>
+							<h2>Блог для дизайнеров</h2>
+							<p>
+								Креативный блог со статьями о UI/UX, типографике и инструментах.
+								Светлая тема с акцентами.
+							</p>
+							<div class="card-arrow">Открыть проект →</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="container">
+				<p>&copy; 2026 Лабораторные работы по Web-разработке</p>
+			</div>
+		</footer>
+	</body>
+</html>
